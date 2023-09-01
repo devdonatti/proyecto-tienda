@@ -1,0 +1,262 @@
+/* colores
+#D9D9D9
+#000000
+#606C5D*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    display: flex;   
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 1.875rem;
+   
+
+}
+.navbar li a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    
+}
+
+.logos img{
+    display: flex;
+    display: inline;
+
+    
+}
+/* main */
+.sectionPrincipal {
+    width: 100%;
+    height: 31.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    background-image:url(https://images.unsplash.com/photo-1512400930990-e0bc0bd809df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80)
+}
+
+.sectionPrincipal h1 {
+    font-size: 85px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 30px;
+}
+.sectionProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionProductos h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.875rem;
+    margin: 2.5rem 0;
+    padding: .625rem .625rem .625rem .625rem;
+    
+}
+.sectionProductos a {
+    color: black;
+    text-decoration: none;
+  
+}
+.card-productos h3 a{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-decoration: none;
+    justify-items: flex-start;
+    display: flex;
+    font-size: 1.875rem;
+    background-color: rgba(128,128,128,0.352);
+    padding: 10px 10px 10px .625rem;
+
+}
+
+.card-productos{
+    border: .0625rem solid (0,0,0,0,161) ;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .625rem;
+    overflow: hidden;
+    box-shadow: .125rem .125rem .625rem (128, 128,128,128);
+}
+.card-productos div  {
+    margin-top: 300px;
+    display: flex;
+    position: absolute ;
+}
+
+.card-productos img {
+    border-radius: .625rem;
+    width: 100%;
+    height: 100%;
+}
+.productos {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:.625rem;
+    width: 100%;
+    height : 700px;
+    
+
+}
+.titulo-recomendados h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.875rem;
+    margin: 2.5rem 0;
+    padding: .625rem .625rem .625rem .625rem;
+
+}
+.cards-recomendados  {
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    height: 25rem;
+    /*12 columnas como maximo*/
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-areas:
+    "uno   dos   tres  cuatro cinco ";
+    column-gap: 1.25rem;
+}
+.cards-recomendados img {
+    width: 100%;
+    height: 70%;
+
+}
+
+.cards-recomendados h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.uno{
+    background-color:#D9D9D9;
+    grid-area: uno;
+}
+.dos{
+    background-color: #D9D9D9;
+    grid-area: dos;
+}
+.tres{
+    background-color:#D9D9D9;
+    grid-area: tres;
+
+}
+.cuatro{
+    background-color: #D9D9D9;
+    grid-area: cuatro;
+}
+.cinco{
+    background-color: #D9D9D9;
+    grid-area:cinco;
+}
+.whatsApp {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+}
+footer {  
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        background-color: white;
+}
+.sectionNovedades {
+    width: 100%;
+    height: 18.75rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.novedades-ayuda-redes{
+    width: 100%;
+    display: flex;
+    gap:500px;
+    justify-content: center;
+    margin-top: 500px;
+    align-items: center;
+    flex-direction: row;
+}
+.redes {
+    margin-top: 12.5rem;
+    text-align: center;
+}
+.redes img p {
+    margin-top: 12.5rem;
+    display: flex;
+    align-items: end;
+} 
+.info h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.completarnovedades {
+    width: 260px;
+    border: .625rem;
+    border-bottom: #000 1px solid;
+    background: white;
+    font-size: 1.25rem;
+    color: #000;
+    padding: 10px 10px 10px 10px;
+}
+
+.boton {
+    background-color:#D9D9D9 ;
+    padding: .625rem .625rem .625rem .625rem;
+    margin-top: .625rem;
+
+}
+.sectionAyuda h3 a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border: .0625rem solid (0,0,0,0,161) ;
+    
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
